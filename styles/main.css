@@ -115,10 +115,7 @@ main .main-exchange-container .background__image {
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url('../assets/img/Bitcoin.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('../assets/img/Bitcoin.svg') center/cover no-repeat;
 }
 main .main-exchange-container h2 {
   margin-bottom: 30px;
@@ -127,7 +124,7 @@ main .main-exchange-container h2 {
   line-height: 2.6rem;
   color: var(--black);
 }
-main .main-exchange-container p {
+main .main-exchange-container .main-exchange-container--title > p {
   margin-bottom: 30px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -139,4 +136,89 @@ main .main-exchange-container--title {
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
+}
+main .main-tables-container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+main .main-tables-container > h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+main .main-tables-container > h3:first-of-type {
+  color: var(--bitcoin-orange);
+}
+main .main-tables-container > h3:last-of-type {
+  color: var(--secondary-blue);
+}
+main .main-tables-container > .table + div {
+  width: 173px;
+  height: 31px;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 8px 0;
+  margin-bottom: 50px;
+  border-radius: 7px;
+}
+main .main-tables-container > .table.one + div {
+  background-color: var(--soft-orange);
+}
+main .main-tables-container > .table.two + div {
+  background-color: var(--soft-blue);
+}
+
+main .main-tables-container .table  {
+  width: min-content;
+  height: 40%;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2px;
+  row-gap: 2px;
+  justify-content: space-between;
+  margin: 0 auto 30px auto;
+  font-size: 16px;
+}
+main .main-tables-container .table > div {
+  width: 101px;
+  height: 38px;
+  padding: 11px 0;
+  background-color: #FFFFFF;
+}
+main .main-tables-container .table > div:first-child  {
+  border-radius: 8px 0 0 0;
+}
+main .main-tables-container .table > div:nth-child(2) {
+  border-radius: 0 8px 0 0;
+}
+main .main-tables-container .table > div:nth-child(7) {
+  border-radius: 0  0 0 8px;
+}
+main .main-tables-container .table > div:last-child {
+  border-radius: 0 0 8px 0;
+}
+main .main-tables-container .table > div > .down {
+  display: inline-block;
+  width: 11px;
+  height: 6px;
+  margin-left: 10px;
+  background: url('../assets/icons/trending-down.svg') center/cover no-repeat;
+}
+main .main-tables-container .table > div > .up {
+  display: inline-block;
+  width: 11px;
+  height: 6px;
+  margin-left: 10px;
+  background: url('../assets/icons/trending-up.svg') center/cover no-repeat;
+}
+
+main .main-tables-container .table .left {
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: #B5B0AC;
+
+}
+main .main-tables-container .table .right {
+  color: #757575;
+  font-weight: 14px;
 }
