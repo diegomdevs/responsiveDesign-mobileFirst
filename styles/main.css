@@ -355,3 +355,45 @@ main .main-plans-container .plans-container--slider .plans-container--card {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
+main .main-plans-container .plans-container--slider .plans-container--card .plan--qualification {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  padding: 7px;
+  background: var(--bitcoin-orange);
+  border-radius: 8px;
+  color: var(--just-white);
+}
+
+main .main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+main .main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--price > p:last-child {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 6.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: black;
+  margin-right: 13px;
+  letter-spacing: -0.08em;
+}
+main .main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--price > p:first-child {
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+main .main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--saving {
+  font-size: 1.2rem;
+  color: #757575;
+
+}
