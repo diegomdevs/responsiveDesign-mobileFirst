@@ -138,21 +138,30 @@ main .main-exchange-container--title {
   margin: 0 auto;
 }
 main .main-tables-container {
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
-main .main-tables-container > h3 {
+main .main-tables-container > div {
+  width: auto;
+  height: auto;
+  scroll-snap-align: center;
+}
+main .main-tables-container > div > h3 {
   font-size: 18px;
   margin-bottom: 15px;
 }
-main .main-tables-container > h3:first-of-type {
+main .main-tables-container > div:first-of-type h3 {
   color: var(--bitcoin-orange);
 }
-main .main-tables-container > h3:last-of-type {
+main .main-tables-container > div:last-of-type h3 {
   color: var(--secondary-blue);
 }
-main .main-tables-container > .table + div {
+main .main-tables-container > div > div:last-child {
   width: 173px;
   height: 31px;
   font-size: 1.2rem;
@@ -161,22 +170,22 @@ main .main-tables-container > .table + div {
   margin-bottom: 50px;
   border-radius: 7px;
 }
-main .main-tables-container > .table.one + div {
+main .main-tables-container > div > .table.one + div {
   background-color: var(--soft-orange);
 }
-main .main-tables-container > .table.two + div {
+main .main-tables-container > div > .table.two + div {
   background-color: var(--soft-blue);
 }
 
 main .main-tables-container .table  {
   width: min-content;
-  height: 40%;
+  min-height: 159px;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 2px;
   row-gap: 2px;
   justify-content: space-between;
-  margin: 0 auto 30px auto;
+  margin: 0 30px;
   font-size: 16px;
 }
 main .main-tables-container .table > div {
@@ -349,7 +358,7 @@ main .main-plans-container .plans-container--slider {
   height: 316px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  scroll-snap-type: proximity;
+  scroll-snap-type: x proximity;
 }
 main .main-plans-container .plans-container--slider .plans-container--card {
   position: relative;
