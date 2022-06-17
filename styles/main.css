@@ -343,8 +343,17 @@ main .main-plans-container .plans--title > {
   line-height: 1.8rem;
   color: #757575;
 }
+main .main-plans-container .plans-container--slider {
+  display: flex;
+  gap: 36px;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: proximity;
+}
 main .main-plans-container .plans-container--slider .plans-container--card {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
@@ -363,9 +372,17 @@ main .main-plans-container .plans-container--slider .plans-container--card .plan
   left: calc(50% - 60px);
   font-size: 1.2rem;
   padding: 7px;
-  background: var(--bitcoin-orange);
   border-radius: 8px;
   color: var(--just-white);
+}
+main .main-plans-container .plans-container--slider .plans-container--card:first-child .plan--qualification {
+  background: var(--bitcoin-orange);
+}
+main .main-plans-container .plans-container--slider .plans-container--card:nth-child(2) .plan--qualification {
+  background: var(--secondary-blue);
+}
+main .main-plans-container .plans-container--slider .plans-container--card:last-child .plan--qualification {
+  background: var(--warm-black);
 }
 
 main .main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--title {
@@ -396,4 +413,41 @@ main .main-plans-container .plans-container--slider .plans-container--card .plan
   font-size: 1.2rem;
   color: #757575;
 
+}
+main .main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background: #FAF8F7;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  font-family: "DM Sans", sans-serif;
+  color: var(--black);
+}
+main .main-plans-container .plans-container--slider .plans-container--card:first-child .plan-info-container .plan-card--ca {
+  border: 2px solid var(--bitcoin-orange);
+}
+main .main-plans-container .plans-container--slider .plans-container--card:nth-child(2) .plan-info-container .plan-card--ca {
+  border: 2px solid var(--secondary-blue);
+}
+main .main-plans-container .plans-container--slider .plans-container--card:last-child .plan-info-container .plan-card--ca {
+  border: 2px solid var(--warm-black);
+}
+
+main .main-plans-container .plans-container--slider .plans-container--card .plan-info-container .plan-card--ca > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+main .main-plans-container .plans-container--slider .plans-container--card:first-child .plan-info-container .plan-card--ca > span {
+  background: url('../assets/icons/orange-right-arrow.svg');
+}
+main .main-plans-container .plans-container--slider .plans-container--card:nth-child(2) .plan-info-container .plan-card--ca > span {
+  background: url('../assets/icons/blue-right-arrow.svg');
+}
+main .main-plans-container .plans-container--slider .plans-container--card:last-child .plan-info-container .plan-card--ca > span {
+  background: url('../assets/icons/black-right-arrow.svg');
 }
