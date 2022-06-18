@@ -185,7 +185,7 @@ main .main-tables-container .table  {
   column-gap: 2px;
   row-gap: 2px;
   justify-content: space-between;
-  margin: 0 30px;
+  margin: 0 60px;
   font-size: 16px;
 }
 main .main-tables-container .table > div {
@@ -363,11 +363,10 @@ main .main-plans-container .plans-container--slider {
 main .main-plans-container .plans-container--slider .plans-container--card {
   position: relative;
   scroll-snap-align: center;
-  width: 70%;
+  width: min-content;
   min-width: 190px;
-  max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 0 0;
   padding: 0 15px;
   background: var(--just-white);
   border-radius: 15px;
